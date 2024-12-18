@@ -1,13 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    width: 100%;
-    height: 100vh;
-}
 
 :root{
     /* ##colors */
@@ -33,13 +23,18 @@ body{
 
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-figure{
-    width: 100%
+body{
+    min-height: 100vh;
 }
 
 img{ 
-    width: 100%;
+    max-width: 100%;
 }
 
 section, footer{
@@ -53,8 +48,8 @@ h1, h2{
 h1{
     font-weight: 400;
     font-size: 2.3rem;
-    line-height: 2.3rem;
-    margin-bottom: 0.8rem;
+    line-height: 1;
+    margin-top: 1.1rem;
     color: var(--Dark-Charcoal)
 }
 
@@ -62,14 +57,15 @@ h1{
     font-family: 'outfit';
     color: var(--Wenge-Brown);
     font-weight: 300;
-    margin-bottom: 1.5rem;
+    margin-top: 1.9rem;
+    line-height: 1.4;
 }
 
 div{
     background-color: var(--Rose-White);
     padding: 1rem;
     border-radius: 0.6rem;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
 h3{
@@ -83,7 +79,7 @@ ul ::marker{
 }
 
 ul li{
-    padding: 0.5rem;
+    padding: 0.2rem;
     margin-left: 1.2rem;
 }
 
@@ -143,16 +139,12 @@ ol p{
     margin-bottom: 1.8rem;
 }
 
-table
-{
-    display: flex;
-    justify-content: center;
-    
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
 tr{
-    display: flex;
-    justify-content: space-between;
     border-bottom: 1px solid var(--Light-Grey);
     margin-bottom: 1rem;
 }
@@ -160,8 +152,9 @@ tr{
 th{
     font-family: var(--font-family);
     color: var(--Wenge-Brown);
-    margin-right: 5rem;
     font-weight: 400;
+    text-align: left;
+    
 }
 
 td{
@@ -187,15 +180,14 @@ footer a:hover{
     color: var(--Nutmeg);
 }
 
-@media (min-width: 1440px) {
+
+
+@media (min-width: 700px) {
     body{
-        width: 100%;
-        height: 100vh;
         background-color: var(--Eggshell);
         display: flex;
         justify-content: center;
-        height: 100%;
-        padding: 5rem;
+        padding: 2rem;
     }
 
     main{
